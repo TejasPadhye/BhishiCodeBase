@@ -1,0 +1,8 @@
+<div clas="container">
+    <!-- <input type = "text" [(ngModel)] = userData> -->
+    <label>{{ members }}</label>
+</div>
+<div>
+    <button type = "button" class = "btn btn-primary" (click) = "showLuckyMember()">Go</button>
+</div>
+<app-show-lucky-member [luckyMember] = "luckyMember" *ngIf = "loadChildComponent"></app-show-lucky-member>
